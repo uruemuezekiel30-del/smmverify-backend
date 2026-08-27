@@ -1,0 +1,9 @@
+runtime: nodejs18
+env: standard
+
+env_variables:
+  SMSPOOL_API_KEY: "Nx1ZL25vmigW3C3U75SbYNQ1yQSJVQ2E"
+  SMM_PANEL_API_KEY: "d61b387b6003f6d11cc284a682b29288"
+  SMM_PANEL_URL: "https://justanotherpanel.com/api/v2"
+  JWT_SECRET: "your_super_secret_jwt_key_change_this_in_production"
+  NODE_ENV: "production"

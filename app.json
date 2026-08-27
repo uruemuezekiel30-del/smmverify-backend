@@ -1,0 +1,34 @@
+{
+  "name": "smmverify-backend",
+  "description": "SMMVerify Backend API",
+  "keywords": ["node", "express", "sms", "smm"],
+  "repository": "https://github.com/uruemuezekiel30-del/smmverify-backend",
+  "env": {
+    "SMSPOOL_API_KEY": {
+      "description": "Your SMSPool API Key",
+      "value": "Nx1ZL25vmigW3C3U75SbYNQ1yQSJVQ2E"
+    },
+    "SMM_PANEL_API_KEY": {
+      "description": "Your SMM Panel API Key",
+      "value": "d61b387b6003f6d11cc284a682b29288"
+    },
+    "SMM_PANEL_URL": {
+      "description": "Your SMM Panel URL",
+      "value": "https://justanotherpanel.com/api/v2"
+    },
+    "JWT_SECRET": {
+      "description": "JWT Secret Key",
+      "value": "your_super_secret_jwt_key_change_this_in_production"
+    },
+    "NODE_ENV": {
+      "description": "Environment",
+      "value": "production"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

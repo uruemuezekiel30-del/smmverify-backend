@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      NODE_ENV: development
+      SMSPOOL_API_KEY: Nx1ZL25vmigW3C3U75SbYNQ1yQSJVQ2E
+      SMM_PANEL_API_KEY: d61b387b6003f6d11cc284a682b29288
+      SMM_PANEL_URL: https://justanotherpanel.com/api/v2
+      JWT_SECRET: your_super_secret_jwt_key_change_this_in_production
+      DATABASE_PATH: ./database.db
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
